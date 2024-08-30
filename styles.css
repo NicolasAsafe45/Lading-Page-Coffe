@@ -67,7 +67,7 @@ nav{
     grid-template-columns: repeat(3,auto);
     gap: 20px;
     padding: 40px;
-    background: url(../imgs/7848859.jpg);
+    background: url(./imgs/7848859.jpg);
 }
 .shop{
     padding: 30px;
@@ -117,7 +117,7 @@ nav{
 
     .Avaliações{
         grid-template-columns: auto ;
-        background: url(../imgs/7848859.jpg);
+        background: url(./imgs/7848859.jpg);
     }
     
 
