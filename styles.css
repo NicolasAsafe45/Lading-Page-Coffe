@@ -1,0 +1,145 @@
+*{
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+   
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    ul{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+
+        a{
+            color: #121212;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+    }
+
+    button{
+        padding: 13px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(139, 77, 47);
+        color: white;
+    }
+
+    div{
+        display: flex;
+        font-size: 30px;
+
+    }
+    
+}
+
+.Carrosel{
+    img{
+        width: 100%;
+        height: auto; 
+        max-height: 400px; 
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.dropdown{
+    display: none;
+}
+
+.Avaliações{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,auto);
+    gap: 20px;
+    padding: 40px;
+    background: url(../imgs/7848859.jpg);
+}
+.shop{
+    padding: 30px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+}
+
+@media (max-width:1200px) {
+    .shop{
+        grid-template-columns: auto auto;
+    }
+    .Avaliações{
+        grid-template-columns: auto auto ;
+    }
+}
+
+@media (max-width:700px) {
+    .shop{
+        grid-template-columns: auto;
+    }
+
+    .Carrosel{
+        img{
+            width: 100%;
+            height: auto; 
+            max-height: 200px; 
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    nav{
+        justify-content: space-between;
+
+        ul{
+            display: none;
+        }
+
+        button{
+            display: none;
+        }
+    }
+
+    .Avaliações{
+        grid-template-columns: auto ;
+        background: url(../imgs/7848859.jpg);
+    }
+    
+
+    .dropdown{
+        display: flex;
+    }
+
+}
+
+.painel{
+    width: 100%;
+    img{
+        width: 100%;
+        height: auto; 
+        max-height: 900px; 
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+
+
+main{
+    margin-top: 120px;
+}
